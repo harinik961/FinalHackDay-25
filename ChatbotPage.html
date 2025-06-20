@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AwardChatBot</title>
+  
+    <!-- Google Fonts: Rubik -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  
+    <style>
+      body {
+        font-family: 'Rubik', sans-serif;
+        background: #ebcdc3;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+      }
+  
+      .sidebar {
+        width: 220px;
+        background-color: #db7553;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        border-right: 2px solid #e6b3a7;
+      }
+  
+      .tab {
+        padding: 1rem 1.2rem;
+        text-align: left;
+        cursor: pointer;
+        border-bottom: 1px solid #db7553;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+  
+      .tab:hover {
+        background-color: #eeb9aa;
+        color: #000;
+      }
+  
+      .tab i {
+        font-style: normal;
+        font-weight: bold;
+      }
+  
+      .main-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fffaf5;
+      }
+  
+      header {
+        background-color: #db7553;
+        color: #2a2a2a;
+        width: 100%;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      }
+  
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+  
+      header p {
+        margin-top: 0.5rem;
+        font-size: 0.95rem;
+        color: #555;
+      }
+  
+      .chatbot-container {
+        margin: 2rem;
+        width: 90%;
+        max-width: 800px;
+        height: 600px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+  
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+  
+      footer {
+        margin-top: auto;
+        padding: 1rem;
+        font-size: 0.85rem;
+        color: #aaa;
+        text-align: center;
+      }
+    </style>
+  </head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="tab"></div>
+    <div class="tab"></div>
+    <div class="tab"></div>
+    <div class="tab"> Submit a Nomination</div>
+    <div class="tab"> My Awards</div>
+    <div class="tab"> Award Icon Nominations </div>
+    <div class="tab"></div>
+    <div class="tab"></div>
+    <div class="tab"></div>
+    <div class="tab"> Department Awards</div>
+    <div class="tab"> AwardIcon Types</div>
+    <div class="tab"> Alias Search </div>
+
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+      <h1>State Farm Awards AI Assistant</h1>
+      <p>Hello there! Ask me any award related questions, and I will be happy to assist you!</p>
+    </header>
+
+    <div class="chatbot-container">
+      <iframe src="https://707623e18a68e31f60.gradio.live/" allow="clipboard-write"></iframe>
+    </div>
+
+
+  </div>
+
+</body>
+</html>
